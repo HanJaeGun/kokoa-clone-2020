@@ -13,7 +13,12 @@ body {
   width: 33%;
 }
 
-.status-bar__column:nth-last-child(2) {
+/* 첫번째 status-bar__column의 span */
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+.status-bar__column:nth-child(2) {
   display: flex;
   justify-content: center;
 }
@@ -26,9 +31,4 @@ body {
 
 .status-bar__column .fa-battery-full {
   margin: 0px 5px;
-}
-
-/* 첫번째 status-bar__column의 span */
-.status-bar__column:first-child span {
-  margin-right: 5px;
 }
